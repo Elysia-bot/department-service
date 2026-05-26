@@ -1,5 +1,8 @@
 services:
   department-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: ${IMAGE_NAME}:${IMAGE_TAG}
     ports:
       - '${APP_PORT}:${APP_PORT}'
