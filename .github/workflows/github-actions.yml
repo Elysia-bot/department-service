@@ -7,7 +7,7 @@ on:
       - production
 
 env:
-  IMAGE_NAME: department-service
+  IMAGE_NAME: nguyenquangco/department-service
   IMAGE_TAG: ${{ github.sha }}
 
 jobs:
@@ -40,7 +40,7 @@ jobs:
     environment: develop
 
     env:
-      IMAGE_NAME: department-service
+      IMAGE_NAME: nguyenquangco/department-service
       IMAGE_TAG: ${{ github.sha }}
       APP_PORT: ${{ secrets.APP_PORT }}
       DB_URL: ${{ secrets.DB_URL }}
@@ -68,7 +68,7 @@ jobs:
     environment: production
 
     env:
-      IMAGE_NAME: department-service
+      IMAGE_NAME: nguyenquangco/department-service
       IMAGE_TAG: ${{ github.sha }}
       APP_PORT: ${{ secrets.APP_PORT }}
       DB_URL: ${{ secrets.DB_URL }}
