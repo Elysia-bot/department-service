@@ -26,6 +26,7 @@ public class DepartmentService implements IDepartmentService{
     
     @Override
     public Department getDepartmentById(int id) {
+        System.out.println("dev");
         return dpRepository.findAllById(id);
     }
 }
